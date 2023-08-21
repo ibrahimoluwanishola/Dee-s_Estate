@@ -16,6 +16,10 @@ body{
     width: 100vw;
 }
 
+ nav{
+    margin-bottom: 120px;
+ }
+
 .navigatonBar{
     width: 100%;
     height: 140px;
@@ -66,5 +70,73 @@ body{
     height: 50px;
     font-size: 20px;
     padding: 10px 0 10px 10px;
+    border-radius: 10px;
+}
+.Hero-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0 160px 0 160px;
+}
+.Hero-section .h-right{
+    width: 50%;
+    
+}
+.Hero-section .h-left{
+    width: 50%;
+
 }
 
+.Hero-section .h-right h3{
+    font-family: Space Grotesk;
+    color: #0F298B;
+    font-size: 80px;
+    margin-bottom: 20px;
+    
+}
+.Hero-section .h-right p{
+    font-family: space Grotesk;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.Hero-section .h-right .btn_holder{
+    display: flex;
+    gap: 70px;
+    text-align: center;
+   
+
+}
+.Hero-section .h-right .btn_holder .btn{
+
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+}
+.Hero-section .h-right .btn_holder i{
+    font-size: 50px;
+    color:#04196e;
+    cursor: pointer;
+}
+.Hero-section .h-left .image_holder{
+    width: 720px;
+    height: 500px;
+
+    
+}
+.Hero-section .h-left .image_holder img{
+    width: 100%;
+    height: 100%;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.Hero-section .h-left .image_holder .circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color:#2549D3;
+    top: 715px;
+    left: 860px;
+}
