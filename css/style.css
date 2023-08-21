@@ -11,9 +11,15 @@
 
 
 }
-body{
-    height: 100vh;
-    width: 100vw;
+
+@media only screen and (min-width: 1200px) {
+
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    
 }
 
  nav{
@@ -131,6 +137,7 @@ body{
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
+    position: relative;
 }
 .Hero-section .h-left .image_holder .circle{
     width: 80px;
@@ -138,5 +145,25 @@ body{
     border-radius: 100%;
     background-color:#2549D3;
     top: 715px;
-    left: 860px;
+    left: 1100px;
+    position: absolute;
+}
+.Hero-section .h-left .image_holder .circle1{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color:#ffffff;
+    top: 750px;
+    left: 1150px;
+    position: absolute;
+}
+
+.searchContainer{
+    width: 1300px;
+    height: 160px;
+    background-color: #ffffff 1px;
+    box-shadow:0 0 px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
 }
