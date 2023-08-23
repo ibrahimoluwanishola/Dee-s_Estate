@@ -58,17 +58,40 @@
     top: 0; */   
 }
 }
+@media only screen and (min-width: 1200px) {
+    .navigatonBar1{
+        width: 100%;
+        height: 140px;
+        display: none;
+        justify-content: space-evenly;
+        align-items: center;
+        border: #000000 solid 1px;
+        position: fixed;
+        
+    }
+    }
 @media screen and (max-width: 800px){
     .navigatonBar{
         min-width:100% ;
         height: 120px;
-        display: flex;
+        display: none;
         justify-content: space-evenly;
         align-items: center;
         border: #000000 solid 1px;
         
     }
     }
+    @media screen and (max-width: 800px){
+        .navigatonBar1{
+            min-width:100% ;
+            height: 120px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: #000000 solid 1px;
+            
+        }
+        }
 @media only screen and (min-width: 1200px) {
 .navigatonBar .logo{
     font-size: 30px;
@@ -81,7 +104,7 @@
 }
 }
 @media screen and (max-width: 800px){
-    .navigatonBar .logo{
+    .navigatonBar1 .logo{
         font-size: 25px;
         font-family: 'Inter Tight', sans-serif;
         font-family: 'Oleo Script', cursive;
@@ -89,7 +112,8 @@
         height: 50px; */
         top: 45px;
         left: 150px;
-        padding: 0 0 0 420px;
+        padding: 0 0 0 150px;
+    
     }
     }
 
@@ -108,16 +132,14 @@
 }
 @media screen and (max-width: 800px){
 
-    .navigatonBar .panelPage ul{
-        display:flex;
+    .navigatonBar1 .panelPage ul{
+        display:grid;
         justify-content: center;
-        flex-direction: row-reverse;
         align-items: center;
         position: relative;
         gap: 20px;
         text-decoration: none;
-        width: 640px;
-        height: 50px;
+       
         /* top: 45px;
         left: 497px; */
     }
@@ -253,7 +275,7 @@
 .Hero-section .h-right h3{
     font-family: Space Grotesk;
     color: #0F298B;
-    font-size: 80px;
+    font-size: 70px;
     margin-bottom: 20px;
     overflow: hidden;
     white-space: normal;
@@ -269,6 +291,7 @@
         overflow: hidden;
         white-space: normal;
         width: 100%;
+        padding: 0 30px 0 30px;
         
     }
     }
@@ -285,6 +308,8 @@
         font-family: space Grotesk;
         font-size: 35px;
         margin-bottom: 20px;
+        padding: 0 30px 0 30px;
+        
     }
     }
 
@@ -303,6 +328,8 @@
         gap: 70px;
         text-align: center;
         margin-bottom: 50px;
+        padding: 0 30px 0 30px;
+        
        
     
     }
