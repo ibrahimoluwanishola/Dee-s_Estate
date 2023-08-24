@@ -163,13 +163,22 @@
 @media only screen and (min-width: 1200px) {
 .navigatonBar .panelPage ul .page a{
     color: #000000;
+    text-decoration: none;
 }
 }
 @media screen and (max-width: 800px){
     .navigatonBar .panelPage ul .page a{
         color: #000000;
+        text-decoration: none;
     }
     }
+
+    /* .navigatonBar .panelPage ul .page a:hover:not(.active) {
+
+        background-color: #2549D3;
+        color: #ffffff;
+      
+      } */
 
 @media only screen and (min-width: 1200px) {
 .navigatonBar .btn{
@@ -496,6 +505,9 @@
     margin-top: 100px;
     border:#04196e 1px solid;
     box-shadow: 0 0 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 }
 @media screen and (max-width: 800px){
@@ -509,5 +521,56 @@
         margin-top: 100px;
         border:#ffffff 1px solid;
         box-shadow: 0 0 2px;
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+    
     }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .searchContainer .foorms form {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        margin:20px ;
+        display: flex;
+        font-size: 20px;
+        
     }
+}
+
+@media only screen and (min-width: 800px) {
+    .searchContainer .foorms form {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        margin:20px ;
+        padding: 20px;
+        display: grid;
+        font-size: 20px;
+        
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .searchContainer .foorms form select{
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        margin:10px ;
+        display: flex;
+        font-size: 20px;
+        
+    }
+}
+
+
