@@ -1,99 +1,62 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@800&family=Oleo+Script:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@800&family=Oleo+Script:wght@400;700&family=Space+Grotesk:wght@300;400&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     text-decoration: none;
     padding: 0;
-    margin:  0;
+    margin: 0;
     text-decoration: none;
     list-style: none;
+    background-color: azure;
 
 
 }
 
-@media only screen and (min-width: 1200px) {
 
-    body{
-        height: 100vh;
-        width: 100vw;
-    }
-    
-    
+
+/* .navigatonBar .panelPage ul .page a:hover:not(.active) {
+
+        background-color: #2549D3;
+        color: #ffffff;
+      
+      } */
+
+.mainCont {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width: 800px){
-    body{
-        height: 100vh;
-        width: 100vw;
-    }
-
-}
-
-@media only screen and (min-width: 1200px) {
- nav{
+/* nav {
     margin-bottom: 120px;
-   
+} */
 
- }
-}
-@media screen and (max-width: 800px){
-    nav{
-        margin-bottom: 100px;
-       
-    
-     }
-    }
-
-@media only screen and (min-width: 1200px) {
-.navigatonBar{
+.navigatonBar {
     width: 100%;
     height: 140px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border: #000000 solid 1px;
+    border-bottom: #000000 solid 1px;
     /* position: fixed;
-    top: 0; */   
+            top: 0; */
 }
+
+.navigatonBar1 {
+    width: 100%;
+    height: 140px;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    border: #000000 solid 1px;
+    position: fixed;
+
 }
-@media only screen and (min-width: 1200px) {
-    .navigatonBar1{
-        width: 100%;
-        height: 140px;
-        display: none;
-        justify-content: space-evenly;
-        align-items: center;
-        border: #000000 solid 1px;
-        position: fixed;
-        
-    }
-    }
-@media screen and (max-width: 800px){
-    .navigatonBar{
-        min-width:100% ;
-        height: 120px;
-        display: none;
-        justify-content: space-evenly;
-        align-items: center;
-        border: #000000 solid 1px;
-        
-    }
-    }
-    @media screen and (max-width: 800px){
-        .navigatonBar1{
-            min-width:100% ;
-            height: 120px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            border: #000000 solid 1px;
-            
-        }
-        }
-@media only screen and (min-width: 1200px) {
-.navigatonBar .logo{
+
+.navigatonBar .logo {
     font-size: 30px;
     font-family: 'Inter Tight', sans-serif;
     font-family: 'Oleo Script', cursive;
@@ -102,23 +65,8 @@
     top: 45px;
     left: 150px;
 }
-}
-@media screen and (max-width: 800px){
-    .navigatonBar1 .logo{
-        font-size: 25px;
-        font-family: 'Inter Tight', sans-serif;
-        font-family: 'Oleo Script', cursive;
-        /* width: 165px;   
-        height: 50px; */
-        top: 45px;
-        left: 150px;
-        padding: 0 0 0 150px;
-    
-    }
-    }
 
-@media only screen and (min-width: 1200px) {
-.navigatonBar .panelPage ul{
+.navigatonBar .panelPage ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,59 +77,17 @@
     top: 45px;
     left: 497px;
 }
-}
-@media screen and (max-width: 800px){
 
-    .navigatonBar1 .panelPage ul{
-        display:grid;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        gap: 20px;
-        text-decoration: none;
-       
-        /* top: 45px;
-        left: 497px; */
-    }
-    }
-
-@media only screen and (min-width: 1200px) {
-.navigatonBar .panelPage ul .page{
+.navigatonBar .panelPage ul .page {
     font-size: 20px;
-    font-family: Space Grotesk;  
-}
+    font-family: Space Grotesk;
 }
 
-@media screen and (max-width: 800px){
-    .navigatonBar .panelPage ul .page{
-        font-size: 17px;
-        font-family: Space Grotesk;  
-    }
-    }
-    
-
-@media only screen and (min-width: 1200px) {
-.navigatonBar .panelPage ul .page a{
+/* #homeDes {
     color: #000000;
-    text-decoration: none;
-}
-}
-@media screen and (max-width: 800px){
-    .navigatonBar .panelPage ul .page a{
-        color: #000000;
-        text-decoration: none;
-    }
-    }
+} */
 
-    /* .navigatonBar .panelPage ul .page a:hover:not(.active) {
-
-        background-color: #2549D3;
-        color: #ffffff;
-      
-      } */
-
-@media only screen and (min-width: 1200px) {
-.navigatonBar .btn{
+.navigatonBar .btn {
     justify-content: center;
     display: flex;
     align-items: center;
@@ -190,109 +96,235 @@
     width: 150px;
     height: 50px;
     font-size: 20px;
-    padding: 10px 0 10px 10px;
+    color: #ffffff;
+    background-color: #2549D3;
+    /* padding: 10px 0 10px 10px; */
     border-radius: 10px;
 }
-}
 
-@media screen and (max-width: 800px){
-    .navigatonBar .btn{
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        border: none;
-        outline: none;
-        width: 130px;
-        height: 50px;
-        font-size: 18px;
-        padding: 10px 0 10px 10px;
-        border-radius: 10px;
-    }
-    }
-
-    @media screen and (max-width: 800px){
-        #mybtn{
-            padding-right: 70%;
-        }
-    }
-
-@media only screen and (min-width: 1200px) {
 .navigatonBar .btn:hover {
-	border:1px solid #fff;
-    background:#000000;
-    color:#ffffff;
+    border: 1px solid #fff;
+    background: #000000;
+    color: #ffffff;
 }
-}
-@media screen and (max-width: 800px){
-    .navigatonBar .btn:hover {
-        border:1px solid #fff;
-        background:#000000;
-        color:#ffffff;
-    }
-    }
 
-@media only screen and (min-width: 1200px) {
-.Hero-section{
+.Hero-section {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    padding: 0 160px 0 160px;
-}
-}
-
-@media screen and (max-width: 800px){
-    .Hero-section{
-    display: grid;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0 100px 0 100px;
+    padding: 120px;
+    /* gap: 10px; */
 }
+
+.Hero-section .h-right p {
+    font-size: 30px;
+    margin-bottom: 40px;
 }
 
-@media only screen and (min-width: 1200px) {
-.Hero-section .h-right{
-    width: 50%;
-    
-}
-}
-@media screen and (max-width: 800px){
-    .Hero-section .h-right{
-        width: 100%;
-        
-    }
-    }
-
-@media only screen and (min-width: 1200px) {
-.Hero-section .h-left{
-    width: 50%;
-
-}
-}
-@media screen and (max-width: 800px){
-    .Hero-section .h-left{
-        width: 100%;
-    
-    }
-    }
-
-
-
-
-@media only screen and (min-width: 1200px) {
-.Hero-section .h-right h3{
+.Hero-section .h-right h3 {
     font-family: Space Grotesk;
     color: #0F298B;
-    font-size: 70px;
+    font-size: 50px;
     margin-bottom: 20px;
     overflow: hidden;
     white-space: normal;
-    
+
 }
+
+.Hero-section .h-right .btn_holder {
+    display: flex;
+    gap: 70px;
+    text-align: center;
 }
-@media screen and (max-width: 800px){
-    .Hero-section .h-right h3{
+
+.Hero-section .h-right .btn_holder .btn {
+
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.Hero-section .h-right .btn_holder i {
+    font-size: 50px;
+    color: #04196e;
+    cursor: pointer;
+}
+
+.Hero-section .h-right .btn {
+    font-size: 25px;
+    font-family: Space Grotesk;
+}
+
+.Hero-section .h-right .btn:hover {
+    border: 1px solid #fff;
+    background: #000000;
+    color: #ffffff;
+}
+
+.Hero-section .h-left .image_holder {
+    width: 600px;
+    height: 500px;
+}
+
+.Hero-section .h-left .image_holder img {
+    width: 100%;
+    height: 100%;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.Hero-section .h-left .image_holder .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    top: 740px;
+    left: 770px;
+    position: absolute;
+}
+
+.Hero-section .h-left .image_holder .circle1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #2549D3;
+    top: 710px;
+    left: 720px;
+    position: absolute;
+}
+
+/* .searchContainer { */
+/* width: 1300px; */
+/* height: 160px;
+    background-color: #ffffff;
+    box-shadow: 0 0 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.searchContainer {
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchContainer .foorms {
+    width: 75%;
+    height: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff;
+}
+
+.searchContainer .foorms select {
+    border: none;
+    color: #04196e;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #ffffff;
+
+}
+
+.searchContainer .foorms .search {
+    border: none;
+}
+
+.searchContainer .foorms .search i {
+    top: 10px;
+    position: relative;
+    color: #ffffff;
+    background-color: #2549D3;
+    left: 20px;
+}
+
+.searchContainer .foorms .search button {
+    position: absolute;
+    gap: 20px;
+    padding: 10px 20px 10px 60px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #2549D3;
+}
+
+/* @media only screen and (min-width: 800px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    nav {
+        margin-bottom: 100px;
+    }
+
+    .navigatonBar {
+        min-width: 100%;
+        height: 120px;
+        display: none;
+        justify-content: space-evenly;
+        align-items: center;
+        border: #000000 solid 1px;
+
+    }
+
+    .navigatonBar1 {
+        min-width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border: #000000 solid 1px;
+
+    }
+
+    .navigatonBar1 .logo {
+        font-size: 25px;
+        font-family: 'Inter Tight', sans-serif;
+        font-family: 'Oleo Script', cursive;
+    } */
+
+/* width: 165px;   
+         height: 50px;
+        top: 45px;
+        left: 150px;
+        padding: 0 0 0 150px;
+    }
+
+    .navigatonBar1 .panelPage ul {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        gap: 20px;
+        text-decoration: none;
+        top: 45px;
+        left: 497px; 
+    }
+                    
+    .navigatonBar .panelPage ul .page {
+        font-size: 17px;
+        font-family: Space Grotesk;
+    }*/
+
+/* .Hero-section .h-right {
+        width: 100%;
+    }
+
+    .Hero-section .h-left {
+        width: 100%;
+    }
+
+    .Hero-section .h-right h3 {
         font-family: Space Grotesk;
         color: #0F298B;
         font-size: 70px;
@@ -301,142 +333,55 @@
         white-space: normal;
         width: 100%;
         padding: 0 30px 0 30px;
-        
-    }
     }
 
-@media only screen and (min-width: 1200px) {
-.Hero-section .h-right p{
-    font-family: space Grotesk;
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-}
-@media screen and (max-width: 800px){
-    .Hero-section .h-right p{
+    .Hero-section .h-right p {
         font-family: space Grotesk;
         font-size: 35px;
         margin-bottom: 20px;
         padding: 0 30px 0 30px;
-        
-    }
     }
 
-@media only screen and (min-width: 1200px) {
-.Hero-section .h-right .btn_holder{
-    display: flex;
-    gap: 70px;
-    text-align: center;
-   
-
-}
-}
-@media screen and (max-width: 800px){
-    .Hero-section .h-right .btn_holder{
+    .Hero-section .h-right .btn_holder {
         display: flex;
         gap: 70px;
         text-align: center;
         margin-bottom: 50px;
         padding: 0 30px 0 30px;
-        
-       
-    
-    }
     }
 
-@media only screen and (min-width: 1200px) {
-.Hero-section .h-right .btn_holder .btn{
+    .Hero-section .h-right .btn:hover {
+        border: 1px solid #fff;
+        background: #000000;
+        color: #ffffff;
+    }
 
-    width: 180px;
-    height: 60px;
-    border-radius: 10px;
-}
-}
-
-@media screen and (max-width: 800px){
-    .Hero-section .h-right .btn_holder .btn{
-
+    .Hero-section .h-right .btn_holder .btn {
         width: 180px;
         height: 60px;
         border-radius: 10px;
         font-size: 20px;
     }
+
+    .Hero-section .h-right .btn_holder .btn {
+        width: 180px;
+        height: 60px;
+        border-radius: 10px;
+        font-size: 20px;
     }
 
-@media only screen and (min-width: 1200px) {
-.Hero-section .h-right .btn_holder i{
-    font-size: 50px;
-    color:#04196e;
-    cursor: pointer;
-}
-}
-
-@media screen and (max-width: 800px){
-    .Hero-section .h-right .btn_holder i{
+    .Hero-section .h-right .btn_holder i {
         font-size: 50px;
-        color:#04196e;
+        color: #04196e;
         cursor: pointer;
     }
-    }
-@media only screen and (min-width: 1200px) {
-.Hero-section .h-right .btn{
-    font-size: 25px;
-    font-family: Space Grotesk;
-}
-}
-@media screen and (max-width: 800px){
-    .Hero-section .h-right .btn{
+
+    .Hero-section .h-right .btn {
         font-size: 25px;
         font-family: Space Grotesk;
     }
-    }
 
-
-@media only screen and (min-width: 1200px) {
-.Hero-section .h-right .btn:hover {
-	border:1px solid #fff;
-    background:#000000;
-    color:#ffffff;
-}
-}
-@media screen and (max-width: 800px){
-    .Hero-section .h-right .btn:hover {
-        border:1px solid #fff;
-        background:#000000;
-        color:#ffffff;
-    }
-    }
-    
-
-@media only screen and (min-width: 1200px) {
-.Hero-section .h-left .image_holder{
-    width: 720px;
-    height: 500px;
-
-    
-}
-}
-@media screen and (max-width: 800px){
-    .Hero-section .h-left .image_holder{
-        width: 720px;
-        height: 500px;
-    
-        
-    }
-    }
-
-@media only screen and (min-width: 1200px) {
-.Hero-section .h-left .image_holder img{
-    width: 100%;
-    height: 100%;
-    background-position: 100%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-}
-}
-@media screen and (max-width: 800px){
-    .Hero-section .h-left .image_holder img{
+    .Hero-section .h-left .image_holder img {
         width: 100%;
         height: 100%;
         background-position: 100%;
@@ -444,133 +389,71 @@
         background-size: 100%;
         position: absolute;
     }
+
+    .Hero-section .h-left .image_holder {
+        width: 720px;
+        height: 500px;
     }
 
-@media only screen and (min-width: 1200px) {
-.Hero-section .h-left .image_holder .circle{
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    background-color:#2549D3;
-    top: 715px;
-    left: 1100px;
-    position: absolute;
-}
-}
-
-@media screen and (max-width: 800px){
-
-    .Hero-section .h-left .image_holder .circle{
+    .Hero-section .h-left .image_holder .circle {
         width: 80px;
         height: 80px;
         border-radius: 100%;
-        background-color:#2549D3;
+        background-color: #2549D3;
         top: 715px;
         left: 120px;
         position: absolute;
     }
-    }
 
-@media only screen and (min-width: 1200px) {
-.Hero-section .h-left .image_holder .circle1{
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    background-color:#ffffff;
-    top: 750px;
-    left: 1150px;
-    position: absolute;
-}
-}
-@media screen and (max-width: 800px){
-    .Hero-section .h-left .image_holder .circle1{
+    .Hero-section .h-left .image_holder .circle1 {
         width: 80px;
         height: 80px;
         border-radius: 100%;
-        background-color:#ffffff;
+        background-color: #ffffff;
         top: 750px;
         left: 100px;
         position: absolute;
     }
-    }
 
-@media only screen and (min-width: 1200px) {
-.searchContainer{
-    width: 1300px;
-    height: 160px;
-    background-color: #ffffff 1px;
-    box-shadow:0 0 px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    border:#04196e 1px solid;
-    box-shadow: 0 0 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-}
-@media screen and (max-width: 800px){
-    .searchContainer{
+    .searchContainer {
         width: 95%;
         height: 500px;
         background-color: #ffffff 1px;
-        box-shadow:0 0 px;
+        box-shadow: 0 0 px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 100px;
-        border:#ffffff 1px solid;
+        border: #ffffff 1px solid;
         box-shadow: 0 0 2px;
         display: grid;
         justify-content: space-evenly;
         align-items: center;
         padding: 20px;
-    
+
     }
-}
 
-
-@media only screen and (min-width: 1200px) {
-    .searchContainer .foorms form {
+    .searchContainer .foorms form select {
         display: grid;
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
         height: 60px;
-        margin:20px ;
+        margin: 10px;
         display: flex;
         font-size: 20px;
-        
-    }
-}
 
-@media only screen and (min-width: 800px) {
+    }
+
     .searchContainer .foorms form {
         display: grid;
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
         height: 60px;
-        margin:20px ;
+        margin: 20px;
         padding: 20px;
         display: grid;
         font-size: 20px;
-        
+
     }
-}
-
-@media only screen and (min-width: 800px) {
-    .searchContainer .foorms form select{
-        display: grid;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        height: 60px;
-        margin:10px ;
-        display: flex;
-        font-size: 20px;
-        
-    }
-}
-
-
+} */

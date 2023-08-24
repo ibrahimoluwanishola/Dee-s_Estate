@@ -1,6 +1,6 @@
 // Text Typing.......
 
-var content = 'creating quality urban lifestyle, buliding stronger communities.';
+var content = 'creating quality urban lifestyle, building stronger communities.';
 
 var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
